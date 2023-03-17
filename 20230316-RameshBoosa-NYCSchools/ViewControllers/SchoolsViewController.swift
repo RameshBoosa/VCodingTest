@@ -38,6 +38,8 @@ class SchoolsViewController: UIViewController, StoryboardDelegate {
         initTableView()
         
         /// Fetch basic feed to map with UI
+        ///
+        // In-terms of performance it can be improved by seperating fetchschools() and fetchresult calls which we are calling as part of fetchData since there is no dependency with results in home page
         viewModel.fetchData()
         
         // Trigger bindViewModel when landed on this screen, since it observes publishers it keeps re-renders the ui whenever publisher is updated

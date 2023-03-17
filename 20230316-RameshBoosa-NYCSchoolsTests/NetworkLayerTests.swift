@@ -1,6 +1,6 @@
 //
 //  NetworkLayerTests.swift
-//  VCodingTestTests
+//  20230316-RameshBoosa-NYCSchools
 //
 //  Created by Ramesh Boosa on 3/16/23.
 //
@@ -8,7 +8,7 @@
 import UIKit
 import XCTest
 
-@testable import VCodingTest
+@testable import _0230316_RameshBoosa_NYCSchools
 
 class NetworkLayerTests: XCTestCase {
     
@@ -55,12 +55,12 @@ class MockNetworkLayer: SchoolsDelegate, ResultsDelegate {
         return Data()
     }
 
-    static func fetchSchools(from url: URL, using session: URLSession) async throws -> VCodingTest.Schools {
+    static func fetchSchools(from url: URL, using session: URLSession) async throws -> Schools {
         let data = try await MockNetworkLayer.fetchMockData(from: "schools")
         return try JSONDecoder().decode(Schools.self, from: data)
     }
     
-    static func fetchResults(from url: URL, using session: URLSession) async throws -> VCodingTest.Results {
+    static func fetchResults(from url: URL, using session: URLSession) async throws -> Results {
         let data = try await MockNetworkLayer.fetchMockData(from: "results")
         return try JSONDecoder().decode(Results.self, from: data)
     }
