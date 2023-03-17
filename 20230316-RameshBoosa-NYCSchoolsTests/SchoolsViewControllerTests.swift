@@ -1,6 +1,6 @@
 //
 //  SchoolsViewControllerTests.swift
-//  VCodingTestTests
+//  20230316-RameshBoosa-NYCSchools
 //
 //  Created by Ramesh Boosa on 3/16/23.
 //
@@ -8,7 +8,7 @@
 import UIKit
 import XCTest
 
-@testable import VCodingTest
+@testable import _0230316_RameshBoosa_NYCSchools
 
 class SchoolsViewControllerTests:  XCTestCase {
     
