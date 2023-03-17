@@ -34,6 +34,8 @@ class SchoolsViewControllerTests:  XCTestCase {
         return vc ?? SchoolsViewController()
     }
     
+    // TODO: I wish I could spend more time to write better test cases to test data sources given properly for tableview and checking with mock data
+    
     func testView() {
         let sut = createSUT()
         XCTAssertNotNil(sut.view, "view doesn't exist")

@@ -19,6 +19,8 @@ class NetworkLayerTests: XCTestCase {
         sut = MockNetworkLayer()
     }
     
+    // TODO: we can improve these test case if we could create mock session to run these tests with mock urls and compare
+    
     func testFetchSchools() async throws {
            let url = URL(string: "https://example.com/schools")!
         let schools = try await MockNetworkLayer.fetchSchools(from: url, using: URLSession.shared)

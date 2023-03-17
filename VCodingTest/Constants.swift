@@ -7,6 +7,11 @@
 
 import UIKit
 
+/**
+ 
+ Constans created to keep all hard code values and end points in one place so that is it easy to change easily in the future whenever it's required
+ */
+
 enum Constants: String {
     case schools
     case results

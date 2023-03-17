@@ -7,6 +7,8 @@
 
 import UIKit
 
+// given more time to simplify and make app navigations smooth with coordinator
+
 class MainCoordinator: Coordinator {
     var childrenCoordinators: [Coordinator] = []
     var navigationController: UINavigationController

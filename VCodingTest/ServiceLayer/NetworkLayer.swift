@@ -43,6 +43,8 @@ protocol ResultsDelegate {
 
 struct NetworkLayer: SchoolsDelegate, ResultsDelegate {
     
+    // It's bit confusing in assignment. email it's mentioned use third party library anywhere in app but i really don't real usage of any third party library other than api call. I used latest async/await insted of using any third party like Almofire with Future Promise Kit
+    
     @discardableResult
     static func fetchSchools(from url: URL, using session: URLSession) async throws -> Schools {
         let (data, _) = try await session.data(from: url)
